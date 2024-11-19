@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Snippet Cheatsheet</title>
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">CSS Snippet Cheatsheet</h1>
+        <p id="title-text">
+            Useful CSS snippets to simplify web development. Click on any snippet to copy it!!!
+        </p>
+    </header>
+    <main class="box-container">
+        <section class="box">
+            <div class="box-title">FlexBox Row</div>
+            <pre><code>.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}</code></pre>
+        </section>
+        <section class="box">
+            <div class="box-title">Flex Column</div>
+            <pre><code>.column {
+    display: flex;
+    flex-direction: column;
+}</code></pre>
+        </section>
+        <section class="box">
+            <div class="box-title">CSS Grid Layout</div>
+            <pre><code>.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}</code></pre>
+        </section>
+        <section class="box">
+            <div class="box-title">Linear Gradients</div>
+            <pre><code>.linear-gradient-background {
+    background-image: linear-gradient(
+        rgba(232, 102, 236, 0.3) 0%, 
+        rgba(232, 102, 236, 0.6) 100%
+    );
+}</code></pre>
+        </section>
+        <section class="box">
+            <div class="box-title">Box Transition Glow</div>
+            <pre><code>.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.code-card:hover, .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1),
+                0 0 15px rgba(232, 102, 236, 1);
+}</code></pre>
+        </section>
+        <section class="box">
+            <div class="box-title">Overlay Card With Title</div>
+            <pre><code>.card-header {
+    position: relative;
+    margin-top: -20px;
+}</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p id="bottom-text">I realized this was a cheatsheet for the assignment after I finished it! 🙃</p>
+    </footer>
+</body>
+</html>
